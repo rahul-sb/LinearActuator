@@ -1,2 +1,2 @@
 # LinearActuator
-Arduino library to control linear actuator driven with feedback 
+Arduino library to control linear actuator with feedback 
