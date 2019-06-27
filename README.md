@@ -18,9 +18,9 @@ Since this is a 2-phase stepper motor, each phase is controlled separately by ea
 
 For this setup, PhaseA, PhaseB, PhaseA' and PhaseB' of the stepper motor (see page 6 in linear actuator datasheet) are connected to Motor1_A, Motor2_A, Motor1_B, Motor2_B pins of the motor driver (shield) respectively. These pins are then connected to pins D7, D4, D6 and D5 of Arduino respectively via the shield. As shown below *insert image*
 
-![1](https://drive.google.com/uc?export=view&id=1-JS5EMniZpB2Bh1aENQqIyiJNSOLmbOs){:height="36px" width="36px"}
-![2](https://drive.google.com/uc?export=view&id=1-KmMvKml32Ct5qEtYEO2Epu3FkqS5cpq){:height="36px" width="36px"}
-![3](https://drive.google.com/uc?export=view&id=1-SHnmil2_GmCKVE5sH950cd2E6Eb63uF){:height="36px" width="36px"}
+![1](https://drive.google.com/uc?export=view&id=1-JS5EMniZpB2Bh1aENQqIyiJNSOLmbOs | height=100)
+![2](https://drive.google.com/uc?export=view&id=1-KmMvKml32Ct5qEtYEO2Epu3FkqS5cpq | height=100)
+![3](https://drive.google.com/uc?export=view&id=1-SHnmil2_GmCKVE5sH950cd2E6Eb63uF | height=100)
 
 *See page 6 in linear actuator datasheet for which pin legend for DB-9 and HD-15 cables* 
 
