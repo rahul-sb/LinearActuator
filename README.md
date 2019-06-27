@@ -61,8 +61,3 @@ See description written in "RotaryEncoder.h" and "LinActStepper.h" if you want t
 
 I've also given a description about what to do when you are using a single/multi-start thread as lead screw, etc. in the header file description itself. 
 
-
-
-
-
-
