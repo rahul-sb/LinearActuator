@@ -48,43 +48,7 @@
 
 	The libraries in-built "printPosition" and "printAll" also updates the state and then prints via serial.
 	
-
-
-
-	Structuring this Code:
-	I purpose of getting a struct object from the "init" function is preferred because I wanted to pass this struct
-	to other systems (libraries) that build upon this library easily so that I can easily build systems using this approach.
-	For example, if I have a LinearActuator library in a similar way, then I can create a Linear-actuator with encoder feedback
-	system easily using just using the objects. 
-
-	I also avoided creating classes because it is very easy to get confused as to how messages travel within the class especailly
-	while inheriting you have to mentally keep track of whether or not you can call/access a function/variable because it was 
-	declared as private and then later change the function to "private" or "public" and get frustrated. The other issue in using 
-	the classes is that it can get too complicated too easily jus after a few inheritances and the major issue is that as said 
-	before you have to keep in mind all these different combinations that can occur in your mind and then program accordingly. 
-	Which I think could be completely avoided using this approach. 
 	
-	The main focus of programming should be Clarity. Everything must be clearly stated/defined so that it is easily readable
-	like a story.
-
-	I created a simple struct that tells the programmer "Clearly" whats all that is available and what all can be called as
-	functions. Also by declaring the struct all my data is in one place. If I need the user not call a function by mistake I 
-	will either put those functions in a different namespace or declare them as static.
-
-	If I wanted to do class-like inheritance, then I create whatever variables are required as a new struct and then create
-	separate functions that work on the newly created struct. If the class is just an incremental upgrade from the existing 
-	class, then I can just add the small subset of variables that are required to the existing struct and then the relevant 
-	functions either in a new namespace or in the same namespace depending on the situation.
-
-	I also created functions that take in the struct object as arguments so that I can choose to operate on the 
-	enitre set of data (which is neatly organized in sequence by the struct). There are trade-offs to this approach as a programmer
-	can easily change a value in the struct without calling any functions. I design the code such that whatever that I need to 
-	change in the struct object I do it using functions. This is the one thing that I have to keep in mind while writing other libraries
-	that build on this library. There may be other trade-offs which I'm not yet aware of. I'll update this library when I find loop-holes 
-	in this	approach and when I remember that I have to update this library. Until then, have fun with this library!
-
-
-
 	Created by Rahul Subramonian Bama, June 19, 2019
 	GNU GPL License
  */
